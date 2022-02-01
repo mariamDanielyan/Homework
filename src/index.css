@@ -11,3 +11,31 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.header{
+  width: 100%;
+  height: 7vh;
+  border-bottom: 2px solid #026398;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.header a{
+  font-size: large;
+  text-decoration: none;
+  color: #026398;
+  width: 100px;
+  height: 30px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #026398;
+}
+
+.header .active{
+  color: white;
+  background-color: #026398;
+}
