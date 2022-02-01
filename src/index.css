@@ -39,3 +39,20 @@ code {
   color: white;
   background-color: #026398;
 }
+
+.carts{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  border: 1px solid #026398;
+  border-radius: 30px;
+  margin: 10px;
+}
+
+.home-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
