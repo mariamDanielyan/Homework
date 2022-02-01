@@ -56,3 +56,24 @@ code {
   flex-direction: column;
   align-items: center;
 }
+
+.edit-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.select{
+  text-align: center;
+  font-size: large;
+  color: white;
+  background-color: #026398;
+  width: 200px;
+  height: 50px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #026398;
+  margin: 30px;
+}
