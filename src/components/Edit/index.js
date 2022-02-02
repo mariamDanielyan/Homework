@@ -1,25 +1,27 @@
 import {FILTER_OPTIONS} from "../../helpers/constants";
 import {COLORS} from "../../helpers/constants";
-import {useEffect, useState} from "react";
+import {useCallback, useEffect, useState} from "react";
+import {memo} from "react";
+import React from "react";
 
 
-const Edit = () =>{
-    const [value, setValue] = useState(FILTER_OPTIONS[0])
-    const [color, setColor] = useState(COLORS[0])
+const Edit = ({handleEdit}) =>{
+    const [value, setValue] = useState(null)
+    const [color, setColor] = useState(null)
+
 
     useEffect(()=>{
-
-    },[value,color])
+        handleEdit({value, color})
+    },[value ,color])
 
     const getValue = (e) => {
       setValue(e.target.value)
     }
-    console.log(value)
 
     const getColor = (e) => {
         setColor(e.target.value)
     }
-    console.log(color)
+
     return (
         <>
             <div className={'edit-container'}>
@@ -44,4 +46,5 @@ const Edit = () =>{
     )
 }
 
-export default Edit
+
+export default memo(Edit)
