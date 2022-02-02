@@ -10,3 +10,7 @@ export const COLORS = [
     'green',
     'orange'
 ]
+export const TYPE = [
+    'author',
+    'text'
+]
